@@ -1,0 +1,11 @@
+{
+  "name": "yourai",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.12.4",
+  "scripts": {
+    "dev:web": "pnpm --dir apps/web dev",
+    "dev:api": "cd services/api && uv run uvicorn app.main:app --reload",
+    "dev": "pnpm dev:web"
+  }
+}
